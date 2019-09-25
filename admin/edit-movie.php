@@ -28,7 +28,7 @@
 
     <img src="../images/logo.svg" class="rounded mx-auto d-block" style="height: 100px;">
 
-    <p class="h4 mb-4">Add New Movie</p>
+    <p class="h4 mb-4">Edit New Movie</p>
 
     <input type="hidden" name="id" value=<?php echo $id?>>
     

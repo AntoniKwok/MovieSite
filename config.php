@@ -1,9 +1,9 @@
 <?php
 
-    $databaseHost = 'localhost';
-    $databaseName = 'kasus_db';
-    $databaseUsername = 'root';
-    $databasePassword = '';
+    $databaseHost = 'localhost'; //nama host
+    $databaseName = 'testing'; //nama database
+    $databaseUsername = 'root'; //username phpmyadmin
+    $databasePassword = ''; //password phpmyadmin   
 
     $conn = new mysqli($databaseHost, $databaseUsername, $databasePassword, $databaseName); 
 

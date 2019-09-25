@@ -1,8 +1,4 @@
 <?php 
-
-    if(!isset($_SESSION['auth'])){
-        header("Location: ../auth/login.php");
-	}
     
     // $check = $conn->query("SELECT user_id FROM queues WHERE user_id = $id AND status='Pending'");
     
