@@ -31,13 +31,24 @@
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form> -->
     <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
+        
           <?php if(isset($_SESSION['id'])) {?>
-            <a class="nav-link" href="#"  >Welcome, <?php echo $username ?></a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Welcome, <?php echo $username ?>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              
+                <a class="dropdown-item" href="auth/login.php">Logout</a>
+                
+              </div>
+            </li>
           <?php }else{?>
-            <a class="nav-link" href="auth/login.php"  >Masuk</a>
+            <li class="nav-item">
+              <a class="nav-link" href="auth/login.php"  >Masuk</a>
+            </li>
           <?php }?>
-        </li>
+        
     </ul>
   </div>
 </nav>

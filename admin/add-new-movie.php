@@ -1,3 +1,13 @@
+<?php 
+
+    if(!isset($_SESSION['auth'])){
+        header("Location: ../auth/login.php");
+	}
+    
+    // $check = $conn->query("SELECT user_id FROM queues WHERE user_id = $id AND status='Pending'");
+    
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +23,7 @@
 <body>
 <div class="container py-2 col-md-5">
 <!-- Default form register -->
-<form class="text-center border border-light p-5" action="doadd.php" method="POST">
+<form class="text-center border border-light p-5" action="doadd.php" method="POST"  enctype="multipart/form-data">
 
     <img src="../images/logo.svg" class="rounded mx-auto d-block" style="height: 100px;">
 
@@ -30,10 +40,10 @@
 
 
     <!-- Sinopsis -->
-    <textarea name="sinopsis" id="" cols="30" rows="10" class="form-control mb-4" placeholder="Sinopsis"></textarea>
 
+    <input type="text" name="sinopsis" id="" class="form-control mb-4" placeholder="Sinopsis">
     <!-- Duration -->
-    <input type="file" name="image" id="defaultRegisterUsername " class="form-control mb-4" placeholder="Duration">
+    <input type="file" name="image" id="defaultRegisterUsername " class="form-control mb-4">
 
     <!-- Sign up button -->
     <button class="btn btn-secondary my-4 btn-block" type="submit" name="Submit">Add</button>
