@@ -53,6 +53,7 @@
                         </div>
                         <div class="card-footer">
                             <a href="">More info</a>
+							<a href="">More info 2</a>
                         </div>
                     </div>
                 </div>
